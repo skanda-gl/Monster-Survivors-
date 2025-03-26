@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Image Text Extraction Platform - Extract text from images with AI">
+    <meta name="canonical" content="https://your-domain.com/image-text-extractor">
+    <title>Smart Image Text Extractor | AI-Powered OCR Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Smart OCR">
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#support">Support</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="#login" class="btn-login">Login</a>
+                <a href="#start" class="btn-primary">Get Started Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Extract Text from Images with AI</h1>
+            <p class="hero-subtitle">Process multiple images simultaneously with our advanced OCR technology</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-text">Accuracy Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-text">Languages</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-text">Images Processed</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="upload-section" class="upload-area">
+            <h2>Start Extracting Text</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-language"></i>
+                    <h3>Multi-language Support</h3>
+                    <p>Extract text in over 40 languages</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Processing</h3>
+                    <p>Process multiple images simultaneously</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <h3>Batch Export</h3>
+                    <p>Download results in various formats</p>
+                </div>
+            </div>
+
+            <div class="upload-container" id="drop-zone">
+                <div class="upload-content">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <input type="file" id="image-input" multiple accept="image/*">
+                    <label for="image-input" class="upload-button">
+                        Select Images or Drag & Drop
+                    </label>
+                    <p class="support-text">Supports: PNG, JPG, JPEG, BMP, GIF (Max 20 images)</p>
+                </div>
+            </div>
+
+            <div class="processing-options">
+                <div class="language-selector">
+                    <label for="lang-select">Recognition Language:</label>
+                    <select id="lang-select">
+                        <option value="eng">English</option>
+                        <option value="chi_sim">Chinese Simplified</option>
+                        <option value="chi_tra">Chinese Traditional</option>
+                        <option value="jpn">Japanese</option>
+                        <option value="kor">Korean</option>
+                    </select>
+                </div>
+                <div class="quality-selector">
+                    <label for="quality-select">Output Quality:</label>
+                    <select id="quality-select">
+                        <option value="high">High (Slower)</option>
+                        <option value="balanced" selected>Balanced</option>
+                        <option value="fast">Fast (Draft)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="results-section hidden">
+            <div class="results-header">
+                <h2>Results</h2>
+                <div class="results-controls">
+                    <button id="download-all" class="btn-primary">
+                        <i class="fas fa-download"></i> Download All
+                    </button>
+                    <button id="copy-all" class="btn-secondary">
+                        <i class="fas fa-copy"></i> Copy All
+                    </button>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="total-progress"></div>
+            </div>
+            <div id="results-container"></div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <h2>Trusted by Industry Leaders</h2>
+            <div class="testimonials-grid">
+                <!-- Add testimonial cards here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#api">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#docs">Documentation</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Smart Image Text Extractor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast hidden"></div>
+</body>
+</html> 
